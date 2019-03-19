@@ -21,7 +21,7 @@ const computersDisplaying = $('#pagination .current > a');
 const nextButton = $('#pagination .next > a');
 
 const goToMainPage = async () => {
-    browser.waitForAngularEnabled(false);
+    await browser.waitForAngularEnabled(false);
     await browser.get(mainPageLink);
     expect(header).toBeTruthy();
 };
@@ -41,8 +41,6 @@ const filterButtonClick = async () => filterButton.click();
 
 const computerNameColumnHeaderClick = async () => computerNameColumnHeader.click();
 
-//const computerValues = async () => element.all(by.css('td > a')).getText();
-
 const isComputerInTheTable = async (computer) => {
     const computerValues = await element.all(by.css('td > a')).getText();
     return computerValues.filter(value => value === computer).length > 0;
@@ -52,7 +50,7 @@ const computerNameClick = async (computer) => element(by.xpath(`//a[contains(tex
 
 const isPreviousButtonActive = async () => basePoHelper.getAttribute(previousButton, 'isContentEditable');
 const previousButtonClick = async () => previousButton.click();
-const isNextButtonActive = async () => basePoHelper.getAttribute(previousButton, 'isContentEditable');
+const isNextButtonActive = async () => basePoHelper.getAttribute(nextButton, 'isContentEditable');
 const nextButtonClick = async () => nextButton.click();
 const getComputersDisplaying = async () => computersDisplaying.getText();
 

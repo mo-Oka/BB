@@ -1,3 +1,7 @@
+Below you can find standard tips for angular + protractor.
+But I'd recommend to use attached Node config: https://github.com/mo-Oka/BB/blob/master/debug%20config.png
+
+
 # `angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it

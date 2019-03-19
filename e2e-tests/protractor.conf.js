@@ -4,14 +4,14 @@ exports.config = {
   allScriptsTimeout: 11000,
 
   specs: [
-    '*.js'
+    '*-spec.js'
   ],
 
   capabilities: {
     browserName: 'chrome'
   },
 
-  baseUrl: 'http://localhost:8000/',
+  baseUrl: 'http://computer-database.herokuapp.com/computers',
 
   framework: 'jasmine',
 

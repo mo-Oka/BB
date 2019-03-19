@@ -1,5 +1,6 @@
 # Below you can find standard tips for angular + protractor.
 # But I'd recommend to use attached Node config: https://github.com/mo-Oka/BB/blob/master/debug%20config.png
+# You will need these libs: https://github.com/mo-Oka/BB/blob/master/libs.png
 
 
 
